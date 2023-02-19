@@ -1,0 +1,71 @@
+.accordion-item {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.accordion-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    height: 47px;
+    background: #ff6060;
+    color: white;
+    border-radius: 5px;
+}
+
+.accordion__toggle__title {
+    padding: 5px 18px;
+    font-size: 24px;
+    font-family: 'Montserrat';
+}
+
+.arrow {
+    font-size: 25px;
+    font-weight: 700;
+    font-style: bold;
+    padding: 9px 16px;
+    position: relative;
+    bottom: 5px;
+    margin: 0;
+}
+
+.accordion-content {
+    background: #f7f7f7;
+    border-radius: 5px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+
+    padding: 18px 19px 27px 36px;
+
+    color: #FF6060;
+}
+
+
+
+/********************Bandeau************************/
+.logement__description__container__aprop {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 0px 209px;
+}
+
+.logement__description__card__contenu__aprop {
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 15px;
+}
+
+@media screen and (width <=768px) {
+    .logement__description__container__aprop {
+        padding: 0;
+    }
+}

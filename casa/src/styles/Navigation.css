@@ -1,0 +1,61 @@
+.k-banner__Logo {
+    max-width: 100%;
+}
+
+.k-banner__img {
+    width: 100%;
+}
+
+.k-banner {
+    color: #FF6060;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    margin: 30px 45px;
+}
+
+@media screen and (width <=768px) {
+    .k-banner {
+        margin: 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.lien__nav {
+    text-decoration: none;
+    padding-left: 70px;
+    color: #FF6060;
+    font-size: 24px;
+}
+
+@media screen and (width <=768px) {
+    .lien__nav {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 17px;
+        text-transform: uppercase;
+        padding-left: 11px;
+    }
+}
+
+.lien__nav:hover {
+    text-decoration: underline;
+}
+
+.nav-active {
+    text-decoration: underline;
+    color: #FF6060;
+}
