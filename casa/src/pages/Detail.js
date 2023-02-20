@@ -8,38 +8,45 @@ function Detail() {
     const location = useLocation()
     const Home = logements.find((home) => home.id === location.state.logementId)
 
-    // const pictures= Home.pictures
-    // const [currentPic, setCurrentPic] = useState(0)
+    const pictures = Home.pictures
+    const [currentPic, setCurrentPic] = useState(0)
 
-    // const getClassName = (i) => {
-    //     if (i === currentPic) return "img__on";
-    //     return "";
-    // }
+    const getClassName = (i) => {
+        if (i === currentPic) return "img__on";
+        return "";
+    }
 
-    // const next = () =>{
-    //     setCurrentPic((currentPic + 1) % pictures.length)
-    // };
+    const next = () => {
+        setCurrentPic((currentPic + 1) % pictures.length)
+    };
+    const previous = () => {
+        const newCurrentpic = currentPic - 1;
+        if (newCurrentpic < 0) {
+            setCurrentPic(pictures.length - 1);
+            return;
+        }
+        setCurrentPic(currentPic - 1);
+    }
 
     return (
         <div className="body">
-            <div className="logement__image__banner" >
-                <div className="logement__image__container"  >
-
-                    {/* <button onClick={ next }>Next</button>
-                    <button>Previous</button> */}
-                    <div className="logement__img">
-                        {Home.pictures.map((pic, i) => (<img
-                            key={pic}
-                            src={pic}
-                            alt='Gallerie'
-                        // className={getClassName(i)} 
-                        ></img>
-                        ))}
-                    </div>
+            <div className="logement__image__banner">
+                <div className="logement__image__container">
+                    {Home.pictures.map((pic, i) => (<img
+                        key={pic}
+                        src={pic}
+                        alt='Gallerie'
+                        className={getClassName(i)}
+                    ></img>
+                    ))}
                 </div>
+                <button className="right" onClick={next}><i className="fas fa-chevron-right"> </i></button>
 
-
-            </div>
+                <button className="left" onClick={previous}><i className="fas fa-chevron-left"> </i></button>
+                <span className="counter">
+                    {currentPic + 1} / {pictures.length}
+                </span>
+            </div >
             <div className="logement__banner">
                 <div className="logement">
                     <h1 className="logement__titre">{Home.title}</h1>
@@ -68,7 +75,7 @@ function Detail() {
                     <li>{equip}</li>
                 )} />
             </div>
-        </div>
+        </div >
     )
 }
 

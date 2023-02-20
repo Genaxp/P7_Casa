@@ -1,0 +1,369 @@
+.body {
+  font-family: 'Montserrat', sans-serif;
+  color: #ff6060;
+}
+
+// @media screen and (width <=768px) {
+//   .body {
+//     padding: 20px;
+//   }
+// }
+
+/***************************ACCUEIL*********************************************/
+.container {
+  margin: 30px;
+}
+
+.appart {
+  background-color: rgba(60, 59, 59, 0.11);
+  border-radius: 15px;
+  margin-top: 20px;
+  padding: 10px;
+  gap: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+// @media screen and (width <=768px) {
+//   .appart {
+//     background: none;
+//     width: 100%;
+//   }
+// }
+
+.card {
+  background-image: linear-gradient(to top, #863535, #ff6060);
+  border-radius: 10px;
+  width: 28%;
+  display: flex;
+  align-items: flex-end
+}
+
+.img__cover {
+  width: 100%;
+  border-radius: 10px;
+}
+
+// @media screen and (width <=768px) {
+//   .card {
+//     gap: 15px;
+//     width: 100%;
+//   }
+// }
+
+h4 {
+  margin: 0;
+  padding: 0;
+  color: white;
+  opacity: 1;
+  position: absolute;
+
+}
+
+
+/*********************FOOTER*********************************************/
+.footer {
+  background: black;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.imgFooter {
+  padding: 20px;
+}
+
+/*********************Detail annonce********************************************/
+.logement__image__banner {
+  margin-bottom: 20px;
+  position: relative;
+
+  button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 5rem;
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+    border-width: 0;
+
+    &.right {
+      right: 0;
+    }
+
+    &.left {
+      left: 0;
+    }
+  }
+
+  .counter {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    color: white;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 10px
+  }
+
+  .logement__image__container {
+    height: 20rem;
+    width: 100%;
+    position: relative;
+
+    img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      // box-shadow: rgb(149 157 165/ 10%) 0px 8px 24px;
+      border-radius: 25px;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+
+      &.img__on {
+        opacity: 1;
+
+      }
+    }
+
+    button {
+      position: inherit;
+    }
+  }
+}
+
+// @media screen and (width <=768px) {
+//   .logement__img {}
+// }
+
+.logement__titre {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 51px;
+  display: flex;
+  align-items: flex-end;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #FF6060;
+  position: inherit;
+}
+
+.logement__lieu {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: flex-end;
+  color: #FF6060;
+}
+
+.tag {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #ff6060;
+  border-radius: 8px;
+  padding: 2px 15px;
+  margin-right: 10px;
+}
+
+.logement__banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// @media screen and (width <=768px) {
+//   .logement__banner {
+//     display: flex;
+//     flex-direction: column;
+//   }
+// }
+
+.logement__proprio {
+  display: flex;
+  align-items: center;
+}
+
+// @media screen and (width <=768px) {
+//   .logement__container {
+//     display: flex;
+//     flex-direction: row-reverse;
+//     align-items: center;
+//     width: 100%;
+//     justify-content: space-between;
+//   }
+// }
+
+.logement__proprio__badge {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background-color: #C4C4C4;
+}
+
+h3 {
+  width: min-content;
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  padding-right: 15px;
+}
+
+.logement__proprio__stars {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  color: #C4C4C4;
+}
+
+.on {
+  color: #FF6060;
+}
+
+.logement__description {
+  display: flex;
+  justify-content: space-between;
+}
+
+// @media screen and (width <=768px) {
+//   .logement__description {
+//     display: flex;
+//     flex-direction: column;
+//   }
+// }
+
+.logement__description__card {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logement__description__container {
+  flex-basis: 47%;
+  line-height: 25px;
+}
+
+.logement__description__card__contenu {
+  background: #f6f6f6;
+  flex-basis: 42%;
+  min-height: 331px;
+  border-radius: 0 0 5px 5px;
+  padding: 25px 20px;
+}
+
+.logement__desciption__arrow {
+  display: flex;
+  justify-content: space-between;
+
+  position: relative;
+  top: 18px;
+  background: #ff6060;
+  border-radius: 5px;
+  color: white;
+  font-family: 'Montserrat';
+  font-style: normal;
+
+  line-height: 0px;
+  display: flex;
+  align-items: center;
+
+  padding: 0px 5px;
+  margin: 0;
+}
+
+.img__arrow {
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+
+
+/***********************404*******************************/
+
+.taille404 {
+  font-size: 170px;
+  text-align: center;
+  font-family: 'Montserrat';
+}
+
+// @media screen and (width <=768px) {
+//   .taille404 {
+//     position: inherit;
+//   }
+// }
+
+.tailleh2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.lienAccueil {
+  color: #FF6060;
+  text-align: center;
+}
+
+
+/***********Aprop**********/
+
+.Aprop__background {
+  position: relative;
+  border-radius: 25px;
+
+}
+
+/* @media screen and(width<=768px){
+  .Aprop__background{
+    background: url(/public/kalen-mobile.png);
+    position: absolute;
+  }
+}  */
+
+.Aprop__background__img {
+  max-width: 100%;
+  width: 100%;
+  border-radius: 25px;
+  object-fit: fill;
+}
+
+// @media screen and(width<=768px) {
+//   .Aprop__background__img {
+//     background-image: url(/public/kalen-mobile.png);
+
+//   }
+// }
+
+.Aprop__background::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 3px;
+  right: 0;
+  left: 0;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 1.3;
+  mix-blend-mode: darken;
+}
