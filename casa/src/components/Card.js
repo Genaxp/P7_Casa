@@ -3,18 +3,18 @@ import { Link } from "react-router-dom"
 
 const Card = ({ data }) => {
     return (
-        < Link
-            to="/Detail"
-            state={{
-                logementId: data.id
-            }}
 
-        >
-            <div className="card">
-                <img src={data.cover} alt="show home" className="img__cover" />
-                <h4> {data.title}</h4>
-            </div>
-        </Link>
+        <div className="card">
+            < Link
+                to="/Detail"
+                state={{ logementId: data.id }}
+            >
+                <img src={data.cover} alt="show home" />
+                <div className="card__title">
+                    <h4> {data.title}</h4>
+                </div>
+            </Link>
+        </div>
     )
 }
 

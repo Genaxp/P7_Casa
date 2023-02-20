@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "../components/Banner";
-import Appart from "../components/Appart";
+import Logement from "../components/Logement";
 
 
 function Home() {
@@ -8,7 +8,7 @@ function Home() {
     return (
         <main className="container">
             <Banner />
-            <Appart />
+            <Logement />
         </main>
     )
 }

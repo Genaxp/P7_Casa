@@ -14,50 +14,66 @@
   margin: 30px;
 }
 
-.appart {
+.grid {
   background-color: rgba(60, 59, 59, 0.11);
   border-radius: 15px;
   margin-top: 20px;
+  gap: 10px;
   padding: 10px;
-  gap: 15px;
+
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+
 }
 
 // @media screen and (width <=768px) {
 //   .appart {
 //     background: none;
 //     width: 100%;
+//    justify-content:center;
 //   }
 // }
 
 .card {
   background-image: linear-gradient(to top, #863535, #ff6060);
   border-radius: 10px;
-  width: 28%;
-  display: flex;
-  align-items: flex-end
-}
+  min-width: 200px;
+  min-height: 200px;
+  flex-basis: 30%;
+  display: grid;
+  align-items: end;
+  position: relative;
 
-.img__cover {
-  width: 100%;
-  border-radius: 10px;
-}
+  .card__title {
+    width: 70%;
+    margin: 5px;
+    padding: 0;
+    color: white;
+    opacity: 1;
+    position: relative;
+  }
 
-// @media screen and (width <=768px) {
-//   .card {
-//     gap: 15px;
-//     width: 100%;
-//   }
-// }
+  img {
+    width: 100%;
+    height: 100%;
 
-h4 {
-  margin: 0;
-  padding: 0;
-  color: white;
-  opacity: 1;
-  position: absolute;
+    // min-width: 200px;
+    // min-height: 200px;
+    border-radius: 10px;
+    max-width: 100%;
+    position: absolute;
+    flex-basis: 30%;
+    top: 0;
+  }
+
+  // @media screen and (width <=768px) {
+  //   .card {
+  //     gap: 15px;
+  //     width: 100%;
+  //   }
+  // }
+
 
 }
 

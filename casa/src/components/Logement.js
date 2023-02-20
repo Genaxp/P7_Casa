@@ -4,7 +4,7 @@ import Card from "./Card"
 
 function AppartList() {
     return (
-        <div className="appart">
+        <div className="grid">
             {logements.map((appart, index) => (
                 <Card key={index} data={appart} />
             ))}
