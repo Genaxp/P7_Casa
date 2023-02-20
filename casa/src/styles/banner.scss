@@ -8,6 +8,13 @@
     display: grid;
     place-items: center;
     color: white;
+    .lourd {
+        opacity: 0.8;
+    }
+    
+    .br {
+        display: none;
+    }
 }
 
 .banner::before {
@@ -16,14 +23,6 @@
     inset: 0;
     border-radius: 25px;
     background-color: rgba(0, 0, 0, 0.3);
-}
-
-.lourd {
-    opacity: 0.8;
-}
-
-.br {
-    display: none;
 }
 
 @media screen and (width <=768px) {

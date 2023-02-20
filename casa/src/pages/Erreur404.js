@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom"
 
 function Erreur() {
     return (
-        <div className="body">
+        <div className="bodyz">
             <h1 className="taille404">404</h1>
             <h2 className="tailleh2">Oups ! La page que vous demandez n'existe pas.</h2>
             <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}>

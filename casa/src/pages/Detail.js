@@ -29,7 +29,7 @@ function Detail() {
     }
 
     return (
-        <div className="body">
+        <div className="bodyz container">
             <div className="logement__image__banner">
                 <div className="logement__image__container">
                     {Home.pictures.map((pic, i) => (<img

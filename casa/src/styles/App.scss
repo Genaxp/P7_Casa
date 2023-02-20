@@ -1,18 +1,18 @@
-.body {
+
+.bodyz {
   font-family: 'Montserrat', sans-serif;
   color: #ff6060;
+  @media (width <=768px) {
+    padding: 20px;
+  }
 }
 
-// @media screen and (width <=768px) {
-//   .body {
-//     padding: 20px;
-//   }
-// }
-
-/***************************ACCUEIL*********************************************/
 .container {
   margin: 30px;
 }
+
+/*********************************ACCUEIL*********************************************/
+
 
 .grid {
   background-color: rgba(60, 59, 59, 0.11);
@@ -25,15 +25,15 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
+  @media (width <=768px) {
+    background: none;
+    // width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    gap:25px;
+  }
 }
-
-// @media screen and (width <=768px) {
-//   .appart {
-//     background: none;
-//     width: 100%;
-//    justify-content:center;
-//   }
-// }
 
 .card {
   background-image: linear-gradient(to top, #863535, #ff6060);
@@ -44,6 +44,10 @@
   display: grid;
   align-items: end;
   position: relative;
+  @media (width <=768px) {
+    gap: 15px;
+    width: 100%;
+  }
 
   .card__title {
     width: 70%;
@@ -57,28 +61,16 @@
   img {
     width: 100%;
     height: 100%;
-
-    // min-width: 200px;
-    // min-height: 200px;
     border-radius: 10px;
     max-width: 100%;
     position: absolute;
     flex-basis: 30%;
     top: 0;
   }
-
-  // @media screen and (width <=768px) {
-  //   .card {
-  //     gap: 15px;
-  //     width: 100%;
-  //   }
-  // }
-
-
 }
 
 
-/*********************FOOTER*********************************************/
+/************************************FOOTER*********************************************/
 .footer {
   background: black;
   color: white;
@@ -88,13 +80,12 @@
   align-items: center;
   padding-top: 20px;
   margin-top: 20px;
+  .imgFooter {
+    padding: 20px;
+  }
 }
 
-.imgFooter {
-  padding: 20px;
-}
-
-/*********************Detail annonce********************************************/
+/******************************************Detail annonce********************************************/
 .logement__image__banner {
   margin-bottom: 20px;
   position: relative;
@@ -139,14 +130,12 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      // box-shadow: rgb(149 157 165/ 10%) 0px 8px 24px;
       border-radius: 25px;
       opacity: 0;
       transition: opacity 0.5s ease-in-out;
-
+      
       &.img__on {
         opacity: 1;
-
       }
     }
 
@@ -156,9 +145,7 @@
   }
 }
 
-// @media screen and (width <=768px) {
-//   .logement__img {}
-// }
+
 
 .logement__titre {
   font-family: 'Montserrat';
@@ -203,29 +190,33 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom:20px;
+  @media (width <=768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
-// @media screen and (width <=768px) {
-//   .logement__banner {
-//     display: flex;
-//     flex-direction: column;
-//   }
-// }
+.logement__container{
+ 
+  @media (width <= 768px){
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+    
+}
 
 .logement__proprio {
   display: flex;
   align-items: center;
+  @media (width <=768px) {
+ 
+  }
 }
-
-// @media screen and (width <=768px) {
-//   .logement__container {
-//     display: flex;
-//     flex-direction: row-reverse;
-//     align-items: center;
-//     width: 100%;
-//     justify-content: space-between;
-//   }
-// }
 
 .logement__proprio__badge {
   height: 50px;
@@ -261,14 +252,13 @@ h3 {
 .logement__description {
   display: flex;
   justify-content: space-between;
+  
+  @media screen and (width <=768px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
-// @media screen and (width <=768px) {
-//   .logement__description {
-//     display: flex;
-//     flex-direction: column;
-//   }
-// }
 
 .logement__description__card {
   display: flex;
@@ -316,20 +306,16 @@ li {
   list-style-type: none;
 }
 
-
 /***********************404*******************************/
 
 .taille404 {
   font-size: 170px;
   text-align: center;
   font-family: 'Montserrat';
+  @media (width <=768px) {
+    position: inherit;
+  }
 }
-
-// @media screen and (width <=768px) {
-//   .taille404 {
-//     position: inherit;
-//   }
-// }
 
 .tailleh2 {
   font-size: 40px;
@@ -341,45 +327,31 @@ li {
   text-align: center;
 }
 
+/********************************Aprop*****************************************/
 
-/***********Aprop**********/
-
-.Aprop__background {
+.Aprop__background{
   position: relative;
-  border-radius: 25px;
-
-}
-
-/* @media screen and(width<=768px){
-  .Aprop__background{
-    background: url(/public/kalen-mobile.png);
-    position: absolute;
-  }
-}  */
-
-.Aprop__background__img {
+  background: url(../assets/images/kalen.png) center/cover;
   max-width: 100%;
-  width: 100%;
+  min-height: 150px;
+  margin:auto;
+  
   border-radius: 25px;
-  object-fit: fill;
+
+  @media (width<=768px) {
+    background: url(../assets/images/kalen-Unsplash.png)center/cover;
+    max-height: 100%;
+    height: 600px;
+    width: 632px;
+    max-width: 100%;
+  
+  }
 }
-
-// @media screen and(width<=768px) {
-//   .Aprop__background__img {
-//     background-image: url(/public/kalen-mobile.png);
-
-//   }
-// }
 
 .Aprop__background::before {
   position: absolute;
   content: "";
-  top: 0;
-  bottom: 3px;
-  right: 0;
-  left: 0;
+  inset:0;
   border-radius: 25px;
   background-color: rgba(0, 0, 0, 0.3);
-  opacity: 1.3;
-  mix-blend-mode: darken;
 }
