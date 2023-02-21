@@ -1,13 +1,16 @@
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import logements from "../components/logements"
 import Accordion from "../components/Accordion";
 
 
 function Detail() {
-    const location = useLocation()
-    const Home = logements.find((home) => home.id === location.state.logementId)
 
+    let {id} = useParams()
+    console.log(id)
+
+    const Home = logements.find((home) => home.id === id)
+    /**if Home*/
     const pictures = Home.pictures
     const [currentPic, setCurrentPic] = useState(0)
 
@@ -47,6 +50,7 @@ function Detail() {
                     {currentPic + 1} / {pictures.length}
                 </span>
             </div >
+         
             <div className="logement__banner">
                 <div className="logement">
                     <h1 className="logement__titre">{Home.title}</h1>

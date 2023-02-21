@@ -9,13 +9,15 @@ import Erreur404 from "./Erreur404";
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
+
+
 const App = () => {
   return (
     <BrowserRouter>
-      <Navigation className="container" />
+      <Navigation/>
       <Routes>
         <Route path="/" element={<Accueil />} />
-        <Route path="/Detail" element={<Detail />} />
+        <Route path="/Detail/:id" element={<Detail />} />
         <Route path="/Apropos" element={<Apropos />} />
         <Route path="*" element={<Erreur404 />} />
       </Routes>

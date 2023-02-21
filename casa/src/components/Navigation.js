@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 
 function Nav() {
     return (
-        <nav className='k-banner'>
+        <nav className='k-banner container'>
             <div className="k-banner__Logo" >
                 <img className="k-banner__img" src={Logo} alt='Logo' />
             </div>

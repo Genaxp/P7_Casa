@@ -8,7 +8,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 25px;
+        margin-top: 25px;
         height: 47px;
         background: #ff6060;
         color: white;
@@ -49,6 +49,11 @@
     justify-content: space-around;
     flex-direction: column;
     padding: 0px 209px;
+
+    @media screen and (width <= 1092px){
+        padding: 0 150px;
+    }
+
     @media screen and (width <=768px) {
         padding: 0;
     }
@@ -60,8 +65,7 @@
         margin-bottom: 15px;
         @media screen and (width <=768px) {
             padding: 0;
-        }
-        
+        }  
     }
 }
 

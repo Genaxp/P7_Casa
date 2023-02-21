@@ -4,25 +4,31 @@
     justify-content: space-between;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
-    margin: 30px 45px;
 
-    @media screen and (width <=768px) {
-        margin: 5px;
-        display: flex;
-        justify-content: space-between;
-    }
+    // @media screen and (width <=768px) {
+    //     margin: 5px;
+    //     display: flex;
+    //     justify-content: space-between;
+    // }
 
     .k-banner__Logo {
         max-width: 100%;
         .k-banner__img {
-            width: 100%;
+            width: 85%;
         }
     }
 
     ul {
         display: flex;
         list-style-type: none;
-        padding: 0;
+        gap:70px;
+        padding:0;
+        @media (width <= 768px){
+            gap: 20px;
+        }
+    }
+    li{
+        white-space: nowrap;
     }
 }
 
@@ -32,7 +38,6 @@ a {
 
 .lien__nav {
     text-decoration: none;
-    padding-left: 70px;
     color: #FF6060;
     font-size: 24px;
     @media screen and (width <=768px) {
@@ -41,7 +46,6 @@ a {
         font-size: 12px;
         line-height: 17px;
         text-transform: uppercase;
-        padding-left: 11px;
     }
 }
 

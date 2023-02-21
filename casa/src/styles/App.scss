@@ -2,13 +2,18 @@
 .bodyz {
   font-family: 'Montserrat', sans-serif;
   color: #ff6060;
-  @media (width <=768px) {
-    padding: 20px;
-  }
 }
 
 .container {
-  margin: 30px;
+  margin: 30px 100px;
+
+  @media ( width <= 1092px){
+    margin: 30px 50px;
+  }
+
+  @media (width <= 768px){
+    margin:20px;
+  }
 }
 
 /*********************************ACCUEIL*********************************************/
@@ -265,11 +270,6 @@ h3 {
   justify-content: flex-end;
 }
 
-.logement__description__container {
-  flex-basis: 47%;
-  line-height: 25px;
-}
-
 .logement__description__card__contenu {
   background: #f6f6f6;
   flex-basis: 42%;
@@ -334,15 +334,13 @@ li {
   background: url(../assets/images/kalen.png) center/cover;
   max-width: 100%;
   min-height: 150px;
-  margin:auto;
-  
+  margin: auto; 
   border-radius: 25px;
 
   @media (width<=768px) {
     background: url(../assets/images/kalen-Unsplash.png)center/cover;
     max-height: 100%;
-    height: 600px;
-    width: 632px;
+    height: 223px;
     max-width: 100%;
   
   }
