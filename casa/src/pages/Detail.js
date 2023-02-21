@@ -1,56 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
 import { useParams } from "react-router-dom"
 import logements from "../components/logements"
 import Accordion from "../components/Accordion";
+import Gallery from "../components/Gallery"
 
 
 function Detail() {
-
+  
     let {id} = useParams()
     console.log(id)
-
     const Home = logements.find((home) => home.id === id)
     /**if Home*/
-    const pictures = Home.pictures
-    const [currentPic, setCurrentPic] = useState(0)
 
-    const getClassName = (i) => {
-        if (i === currentPic) return "img__on";
-        return "";
-    }
-
-    const next = () => {
-        setCurrentPic((currentPic + 1) % pictures.length)
-    };
-    const previous = () => {
-        const newCurrentpic = currentPic - 1;
-        if (newCurrentpic < 0) {
-            setCurrentPic(pictures.length - 1);
-            return;
-        }
-        setCurrentPic(currentPic - 1);
-    }
 
     return (
-        <div className="bodyz container">
-            <div className="logement__image__banner">
-                <div className="logement__image__container">
-                    {Home.pictures.map((pic, i) => (<img
-                        key={pic}
-                        src={pic}
-                        alt='Gallerie'
-                        className={getClassName(i)}
-                    ></img>
-                    ))}
-                </div>
-                <button className="right" onClick={next}><i className="fas fa-chevron-right"> </i></button>
-
-                <button className="left" onClick={previous}><i className="fas fa-chevron-left"> </i></button>
-                <span className="counter">
-                    {currentPic + 1} / {pictures.length}
-                </span>
-            </div >
-         
+   
+         <div className="bodyz container">
+            <Gallery/>
             <div className="logement__banner">
                 <div className="logement">
                     <h1 className="logement__titre">{Home.title}</h1>
