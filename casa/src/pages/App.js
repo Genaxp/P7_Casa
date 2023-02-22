@@ -9,8 +9,6 @@ import Erreur404 from "./Erreur404";
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
-
-
 const App = () => {
   return (
     <BrowserRouter>
@@ -21,11 +19,8 @@ const App = () => {
         <Route path="/Apropos" element={<Apropos />} />
         <Route path="*" element={<Erreur404 />} />
       </Routes>
-
       <Footer />
-
     </BrowserRouter>
   )
 }
-
 export default App;

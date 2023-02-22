@@ -4,12 +4,9 @@ import Bandeau from "../components/Bandeau"
 function About() {
     return (
         <div className="container bodyz">
-            <div className="Aprop__background">
-                {/* <img className="Aprop__background__img" src={Aprop} alt="about"/> */}
-            </div>
+            <div className="Aprop__background"></div>
             < Bandeau />
         </div>
     )
 }
-
 export default About

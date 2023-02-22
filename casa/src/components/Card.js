@@ -3,7 +3,6 @@ import { Link } from "react-router-dom"
 
 const Card = ({ data }) => {
     return (
-
         <div className="card">
             <Link to={"/Detail/"+ data.id }>
                 <img src={data.cover} alt="show home" />

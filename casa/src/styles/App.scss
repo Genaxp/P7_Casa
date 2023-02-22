@@ -32,7 +32,6 @@
 
   @media (width <=768px) {
     background: none;
-    // width: 100%;
     display:flex;
     flex-direction: column;
     justify-content:center;
@@ -54,7 +53,7 @@
     width: 100%;
   }
 
-  .card__title {
+  &__title {
     width: 70%;
     margin: 5px;
     padding: 0;
@@ -83,11 +82,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 252px;
   width: 100%;
   justify-content: flex-end;
   max-height: 100%;
-  margin-top: 20px;
+  margin-top: 115px;
+  padding-bottom: 85px;
+  padding-top: 148px;
   .imgFooter {
     padding: 20px;
   }
@@ -255,6 +255,7 @@ li {
   font-size: 170px;
   text-align: center;
   font-family: 'Montserrat';
+  line-height: normal;
   @media (width <=768px) {
     position: inherit;
   }
@@ -268,13 +269,14 @@ li {
 .lienAccueil {
   color: #FF6060;
   text-align: center;
+  text-decoration: underline;
 }
 
 /********************************Aprop*****************************************/
 
 .Aprop__background{
   position: relative;
-  background: url(../assets/images/kalen.png);
+  background: url(../assets/images/kalen.png) center/cover;
   max-width: 100%;
   max-height: 100%;
   min-height: 223px;

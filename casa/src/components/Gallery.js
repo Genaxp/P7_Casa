@@ -32,7 +32,8 @@ function Gallerie() {
     return (
         <div className="logement__image__banner">
             <div className="logement__image__container">
-                {Home.pictures.map((pic, i) => (<img
+                {Home.pictures.map((pic, i) => (
+                <img
                     key={pic}
                     src={pic}
                     alt='Gallerie'
@@ -40,12 +41,14 @@ function Gallerie() {
                 ></img>
                 ))}
             </div>
+            {}
+            {Home.pictures.length > 1 && <>
             <button className="right" onClick={next}><i className="fas fa-chevron-right"> </i></button>
-
             <button className="left" onClick={previous}><i className="fas fa-chevron-left"> </i></button>
             <span className="counter">
                 {currentPic + 1} / {pictures.length}
             </span>
+            </>}
         </div >
     )
 }

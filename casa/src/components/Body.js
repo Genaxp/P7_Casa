@@ -1,3 +1,4 @@
+import React from "react";
 import '../styles/Body.css'
 
 function Body() {
@@ -7,5 +8,4 @@ function Body() {
         </div>
     )
 }
-
 export default Body
