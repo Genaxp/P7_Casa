@@ -19,8 +19,6 @@ body{
 }
 
 /*********************************ACCUEIL*********************************************/
-
-
 .grid {
   background-color: rgba(60, 59, 59, 0.11);
   border-radius: 15px;
@@ -59,7 +57,7 @@ body{
     width: 70%;
     margin: 5px;
     padding: 0;
-    font-family: "Montserrat", sans-serif;
+   
     color: white;
     opacity: 1;
     position: relative;
@@ -81,7 +79,6 @@ body{
 .footer {
   background: black;
   color: white;
-  font-family: 'Montserrat', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -95,7 +92,6 @@ body{
 /******************************************Detail annonce********************************************/
 
 .logement__titre {
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
@@ -120,7 +116,6 @@ body{
 }
 
 .tag {
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 10px;
@@ -177,7 +172,6 @@ h3 {
   display: flex;
   align-items: flex-end;
   text-align: right;
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -229,7 +223,6 @@ h3 {
   background: #ff6060;
   border-radius: 5px;
   color: white;
-  font-family: 'Montserrat';
   font-style: normal;
 
   line-height: 0px;
@@ -253,7 +246,6 @@ li {
 .taille404 {
   font-size: 170px;
   text-align: center;
-  font-family: 'Montserrat';
   line-height: normal;
   @media (width <=768px) {
     position: inherit;

@@ -10,7 +10,6 @@
     color: white;
     .lourd {
         opacity: 0.8;
-        font-family: "Montserrat", sans-serif;
     }
     
     .br {
@@ -29,7 +28,6 @@
 @media screen and (width <=768px) {
     .br {
         display: initial;
-        font-family: 'Montserrat';
     }
 
     h1 {
@@ -38,7 +36,6 @@
         right: 32.53%;
         top: 14.04%;
         bottom: 80.05%;
-        font-family: 'Montserrat';
         font-style: normal;
         font-weight: 500;
         font-size: 35px;
