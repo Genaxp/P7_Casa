@@ -2,6 +2,8 @@ import React , { useState } from "react"
 import { useParams } from "react-router-dom"
 import logements from "../components/logements"
 import '../styles/gallery.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { solid } from '@fortawesome/fontawesome-svg-core/import.macro'
 
 function Gallerie() {
     
@@ -41,8 +43,8 @@ function Gallerie() {
             </div>
             {}
             {Home.pictures.length > 1 && <>
-            <button title="chevron" className="right" onClick={next}><i className=" fa-chevron-right"> </i> </button>
-            <button title="chevron"  className="left" onClick={previous}><i className=" fa-chevron-left"> </i></button>
+            <button title="chevron" className="right" onClick={next}><FontAwesomeIcon icon={solid('chevron-right')} /></button>
+            <button title="chevron" className="left" onClick={previous}><FontAwesomeIcon icon={solid('chevron-left')}  /></button>
             <span className="counter">
                 {currentPic + 1} / {pictures.length}
             </span>
