@@ -3,8 +3,6 @@ import { useParams } from "react-router-dom"
 import logements from "../components/logements"
 import '../styles/gallery.scss'
 
-
-
 function Gallerie() {
     
     let {id} = useParams()
@@ -43,8 +41,8 @@ function Gallerie() {
             </div>
             {}
             {Home.pictures.length > 1 && <>
-            <button className="right" onClick={next}><i className="fas fa-chevron-right"> </i></button>
-            <button className="left" onClick={previous}><i className="fas fa-chevron-left"> </i></button>
+            <button title="chevron" className="right" onClick={next}><i className=" fa-chevron-right"> </i> </button>
+            <button title="chevron"  className="left" onClick={previous}><i className=" fa-chevron-left"> </i></button>
             <span className="counter">
                 {currentPic + 1} / {pictures.length}
             </span>

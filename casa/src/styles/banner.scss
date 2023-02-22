@@ -1,3 +1,5 @@
+@use "../scss/variables" as *;
+
 .banner {
     position: relative;
     background: url(../assets/images/Home.png) center/cover;
@@ -7,7 +9,7 @@
     border-radius: 25px;
     display: grid;
     place-items: center;
-    color: white;
+    color: $secondary-color;
     .lourd {
         opacity: 0.8;
     }

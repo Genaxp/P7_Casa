@@ -1,6 +1,5 @@
 import React from "react";
 import { useParams } from "react-router-dom"
-import { NavLink } from "react-router-dom"
 import logements from "../components/logements"
 import Accordion from "../components/Accordion";
 import Gallery from "../components/Gallery"
@@ -39,8 +38,8 @@ function Detail() {
             </div>
             <div className="logement__description">
                 <Accordion heading="Description" content={Home.description} />
-                <Accordion heading="Equipment" content={Home.equipments.map((equip) =>
-                    <li>{equip}</li>
+                <Accordion heading="Equipment" content={Home.equipments.map((equip,index) =>
+                    <li key={index}>{equip}</li>
                 )} />
             </div>
         </div >

@@ -1,3 +1,5 @@
+@use "../scss/variables" as *;
+
 .logement__image__banner {
     margin-bottom: 20px;
     position: relative;
@@ -8,7 +10,7 @@
       bottom: 0;
       width: 5rem;
       background-color: transparent;
-      color: white;
+      color:$secondary-color;
       font-size: 30px;
       border-width: 0;
   
@@ -25,7 +27,7 @@
       position: absolute;
       text-align: center;
       bottom: 0;
-      color: white;
+      color: $secondary-color;
       font-size: 1.5rem;
       width: 100%;
       padding: 10px

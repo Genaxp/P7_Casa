@@ -1,5 +1,7 @@
+@use "../scss/variables" as *;
+
 .k-banner {
-    color: #FF6060;
+    color: $color-primary;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,13 +26,9 @@
     }
 }
 
-a {
-    text-decoration: none;
-}
-
 .lien__nav {
     text-decoration: none;
-    color: #FF6060;
+    color:$color-primary;
     font-size: 24px;
     @media screen and (width <=768px) {
         font-style: normal;
@@ -39,9 +37,11 @@ a {
         line-height: 17px;
         text-transform: uppercase;
     }
+    &__nav:hover {
+        text-decoration: underline;    
+    }  
 }
-
-.lien__nav:hover {
+.nav-active{
     text-decoration: underline;
+    color:$color-primary;
 }
-

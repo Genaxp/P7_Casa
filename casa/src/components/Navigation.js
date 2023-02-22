@@ -13,7 +13,7 @@ function Nav() {
                 <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}>
                     <li className="lien__nav" >Accueil</li>
                 </NavLink>
-                <NavLink to="/Apropos" className={(nav) => (nav.isActive ? "nav-active1" : "")}>
+                <NavLink to="/Apropos" className={(nav) => (nav.isActive ? "nav-active" : "")}>
                     <li className="lien__nav">A Propos</li>
                 </NavLink>
             </ul>
