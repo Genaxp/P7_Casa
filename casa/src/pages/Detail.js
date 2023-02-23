@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams,NavLink } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import logements from "../components/logements"
 import Accordion from "../components/Accordion";
 import Gallery from "../components/Gallery"
@@ -10,13 +10,10 @@ function Detail() {
     let {id} = useParams()
     let Home = logements.find((home) => home.id === id)
 
-
     if ( Home == null | undefined) {
-        return <NavLink to="*" >{<Erreur />} 
-        </NavLink>
+        return <Erreur/> 
     }
-   
-
+    
     return (
          <div className="container">
             <Gallery/>
