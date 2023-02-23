@@ -1,17 +1,23 @@
 import React from "react";
-import { useParams } from "react-router-dom"
+import { useParams,NavLink } from "react-router-dom"
 import logements from "../components/logements"
 import Accordion from "../components/Accordion";
 import Gallery from "../components/Gallery"
-
+import Erreur from "./Erreur";
 
 function Detail() {
   
     let {id} = useParams()
-    const Home = logements.find((home) => home.id === id)
-    
-    return (
+    let Home = logements.find((home) => home.id === id)
+
+
+    if ( Home == null | undefined) {
+        return <NavLink to="*" >{<Erreur />} 
+        </NavLink>
+    }
    
+
+    return (
          <div className="container">
             <Gallery/>
             <div className="logement__banner">

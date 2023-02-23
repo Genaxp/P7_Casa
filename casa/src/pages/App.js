@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Accueil from "./Accueil";
 import Detail from "./Detail";
 import Apropos from "./Apropos";
-import Erreur404 from "./Erreur404";
+import Erreur from "./Erreur";
 
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
@@ -17,7 +17,7 @@ const App = () => {
         <Route path="/" element={<Accueil />} />
         <Route path="/Detail/:id" element={<Detail />} />
         <Route path="/Apropos" element={<Apropos />} />
-        <Route path="*" element={<Erreur404 />} />
+        <Route path="*" element={<Erreur/>} />
       </Routes>
       <Footer />
     </BrowserRouter>
