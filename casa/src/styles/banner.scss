@@ -3,17 +3,20 @@
 .banner {
     position: relative;
     background: url(../assets/images/Home.png) center/cover;
-    min-height: 150px;
+    height: 223px;
     max-width: 100%;
     margin: auto;
     border-radius: 25px;
     display: grid;
     place-items: center;
     color: $secondary-color;
+    @media screen and (width <= 768px){
+        height: 111px;
+        border-radius: 10px;
+    }
     .lourd {
         opacity: 0.8;
     }
-    
     .br {
         display: none;
     }
@@ -25,6 +28,10 @@
     inset: 0;
     border-radius: 25px;
     background-color: rgba(0, 0, 0, 0.3);
+    @media screen and (width <= 768px){
+        height: 111px;
+        border-radius: 10px;
+    }
 }
 
 @media screen and (width <=768px) {
@@ -33,14 +40,10 @@
     }
 
     h1 {
-        position: absolute;
-        left: 9.6%;
-        right: 32.53%;
-        top: 14.04%;
-        bottom: 80.05%;
         font-style: normal;
         font-weight: 500;
-        font-size: 35px;
+        font-size: 24px;
         line-height: 27px;
+        width: 80%;
     }
 }

@@ -4,7 +4,7 @@ import '../styles/banner.scss'
 const Banner = () => {
     return (
         <div className="banner">
-            <h1 className="lourd"> Chez vous,<br className="br" /> partout et ailleurs</h1>
+            <h1 className="lourd"> Chez vous, partout et ailleurs</h1>
         </div>
     )
 }

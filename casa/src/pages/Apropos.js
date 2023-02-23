@@ -3,7 +3,7 @@ import Bandeau from "../components/Bandeau"
 
 function About() {
     return (
-        <div className="container bodyz">
+        <div className="container">
             <div className="Aprop__background"></div>
             < Bandeau />
         </div>

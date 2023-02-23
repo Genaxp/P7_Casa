@@ -12,7 +12,7 @@ function Detail() {
     
     return (
    
-         <div className="bodyz container">
+         <div className="container">
             <Gallery/>
             <div className="logement__banner">
                 <div className="logement">
@@ -38,8 +38,10 @@ function Detail() {
             </div>
             <div className="logement__description">
                 <Accordion heading="Description" content={Home.description} />
-                <Accordion heading="Equipment" content={Home.equipments.map((equip,index) =>
-                    <li key={index}>{equip}</li>
+                <Accordion heading="Equipement" content={Home.equipments.map((equip,index) =>
+                    <ul key={index}>
+                        <li key={index}>{equip}</li>
+                    </ul>
                 )} />
             </div>
         </div >
